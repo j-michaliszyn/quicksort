@@ -3,6 +3,7 @@
 
 project_dedalus_quicksort([],[]).
 project_dedalus_quicksort([X],[X]).
+project_dedalus_quicksort([],[]).
 project_dedalus_quicksort([X|Xs],Ys) :-
   project_dedalus_quicksort_helper_partition(Xs,X,Left,Right),
   project_dedalus_quicksort(Left,Ls),
